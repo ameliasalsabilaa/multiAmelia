@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DCDC"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Kalkulator"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tvA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai A : "
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/eta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/tvB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai B : "
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/etb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <!-- Left side RadioGroup -->
+            <RadioGroup
+                android:id="@+id/LeftRG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/tambah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah ( + )"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/kali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kali ( X )"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/RightRG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/kurang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kurang ( - )"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/bagi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagi ( : )"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/eth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bthasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:textSize="18sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#EF4040"
+            android:onClick="calculateSum"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Halaman Utama"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah1"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Score Basket"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Konversi Suhu"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah3"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Data Diri"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah4"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

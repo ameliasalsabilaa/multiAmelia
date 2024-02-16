@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DCDC"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, Amelia!"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ppAwal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="pindah4">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#711DB0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mau ngapain nih?"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@drawable/pentol" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnbasket"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Score Basket"
+            android:layout_weight="2"
+            android:onClick="pindah1"
+            android:background="@drawable/rounded_corner"/>
+
+        <Button
+            android:id="@+id/btnkonversi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:text="Konversi Suhu"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:onClick="pindah2"
+            android:background="@drawable/rounded_corner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:text="Kalkulator"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:onClick="pindah3"
+            android:background="@drawable/rounded_corner"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:text="Data diri"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:onClick="pindah4"
+            android:background="@drawable/rounded_corner"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

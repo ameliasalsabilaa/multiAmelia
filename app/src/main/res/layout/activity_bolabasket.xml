@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DCDC"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#E1DCDC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:text="SCORE BASKET"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Time"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitor Time"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/score_team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="2">
+            </TextView>
+            <TextView
+                android:id="@+id/score_team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="2">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bth1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:onClick="satupointA"
+                android:text="+1"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:onClick="satupointB"
+                android:text="+1"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <Button
+                android:id="@+id/bth2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:onClick="duapointA"/>
+            <Button
+                android:id="@+id/btv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:onClick="duapointB"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <Button
+                android:id="@+id/bth3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:onClick="tigapointA"/>
+            <Button
+                android:id="@+id/btv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3"
+                android:textColor="@color/white"
+                android:backgroundTint="#FFA732"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:onClick="tigapointB"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/reset_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Score"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#EF4040"
+            android:onClick="resetScore"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:text="Halaman Utama"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah1"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:text="Konversi Suhu"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:text="Kalkulator"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah3"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:text="Data Diri"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pindah4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
